@@ -29,6 +29,7 @@
 <link rel="preload" as="image" href="assets/images/illustrations/cloud-1.webp">
 <link rel="preload" as="image" href="assets/images/illustrations/cloud-2.webp">
 <link href="assets/css/styles.css" rel="stylesheet">
+<link href="assets/css/hero-branding.css" rel="stylesheet">
 <style>
 	/* Performance optimizations */
 	[content-reveal]>div,
@@ -249,7 +250,8 @@
 																																																				            setTimeout(waitForScrollTop, 0);
 																																																				            }
 																																																				            }" x-init="ticker()">
-			<img id="hero-fallback" class="object-cover object-bottom absolute inset-0 z-0 w-full h-full opacity-0"
+			<img id="hero-fallback"
+				class="object-cover object-bottom absolute inset-0 z-0 w-full h-full opacity-0 hero-bg-dim"
 				src="assets/images/illustrations/cloud-1.webp" alt="Hero background" style="display: block;"
 				onload="this.style.opacity='1'; this.style.transition='opacity 0.3s ease-in'">
 			<div class="absolute inset-x-0 top-0 z-0 py-44">
@@ -281,8 +283,33 @@
 								box-shadow: 0 0 5px #00ff00;
 							}
 						</style>
-						<h1 class="main-header text-center text-yellow text-[48px] md:text-[76px] lg:text-[115px] xl:text-[150px] 2xl:text-[200px] 2xl:font-bold leading-none break-all w-full relative z-0 wrap opacity-0 transition-all duration-1000 delay-300"
-							:class="loading ? 'translate-y-1/2' : '!opacity-100'">Danberz Quality Tech</h1>
+						<h1 class="main-header flex flex-col items-center justify-center text-center text-[48px] md:text-[76px] lg:text-[115px] xl:text-[150px] 2xl:text-[200px] leading-none break-all w-full relative z-0 wrap opacity-0 transition-all duration-1000 delay-300"
+							:class="loading ? 'translate-y-1/2' : '!opacity-100'">
+							<div class="hero-logo-container hero-logo-pulse">
+								<div class="hero-logo-lockup">
+									<span class="hero-logo-text">Danberz</span>
+									<!-- 
+										SVG Geometry for 90-degree angle:
+										If width is 40, height is 40.
+										Point 1: 5, 25 (Left)
+										Point 2: 20, 10 (Peak - must be 90 deg)
+										Point 3: 35, 25 (Right)
+										To get exactly 90 degrees, the rise/run must imply it. 
+										If peak is (20,10), leg points at (5,25) and (35,25) form a triangle with height 15 and half-base 15. 
+										Slope = 1. Atan(1) = 45 deg. 45+45 = 90 deg at top. Perfect.
+									-->
+									<svg class="hero-arrows-svg" viewBox="0 0 40 40" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<!-- Bottom Chevron -->
+										<path class="hero-arrow-path" d="M5 25 L20 10 L35 25" />
+										<!-- Top Chevron (shifted up by 15 units? No, closer.) -->
+										<!-- Let's say shifted by 10 units up -> (5,15) (20,0) (35,15) -->
+										<path class="hero-arrow-path" d="M5 5 L20 -10 L35 5" />
+									</svg>
+								</div>
+								<span class="hero-subtext text-xl md:text-3xl lg:text-4xl">Quality Tech</span>
+							</div>
+						</h1>
 					</div>
 				</div>
 				<div

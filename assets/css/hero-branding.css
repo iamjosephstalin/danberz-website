@@ -1,0 +1,109 @@
+/* Hero Branding Updates - Integrated with App Style */
+
+:root {
+    --brand-mint: #2DD4BF;
+    --brand-white: #FFFFFF;
+}
+
+/* Container */
+.hero-logo-container {
+    position: relative;
+    display: inline-block;
+    /* Removed background/backdrop for cleaner look */
+}
+
+/* Logo Lockup Container */
+.hero-logo-lockup {
+    display: inline-flex;
+    align-items: baseline;
+    position: relative;
+    line-height: 1;
+}
+
+/* Text Styling */
+.hero-logo-text {
+    /* Inherit font from body (polymath/sans-serif) */
+    font-weight: 900;
+    /* Keep it bold/heavy */
+    color: var(--brand-white);
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 10;
+}
+
+/* Subtext Styling */
+.hero-subtext {
+    display: block;
+    margin-top: 0.5em;
+    /* Inherit font */
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--brand-white);
+    text-transform: uppercase;
+}
+
+/* Arrow/Chevron SVG Styling */
+.hero-arrows-svg {
+    height: 0.6em;
+    width: auto;
+    overflow: visible;
+
+    position: absolute;
+    right: -0.4em;
+    top: -0.1em;
+
+    z-index: 20;
+    transition: filter 0.3s ease;
+
+    /* Angled upward at 45 degrees */
+    transform: rotate(45deg);
+    transform-origin: center center;
+}
+
+/* Hover Glow */
+.hero-logo-container:hover .hero-arrows-svg {
+    filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.6));
+}
+
+/* Sharp Paths */
+.hero-arrow-path {
+    fill: none;
+    stroke: var(--brand-mint);
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+}
+
+/* Animations */
+.hero-arrow-path {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: drawPath 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-arrow-path:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+@keyframes drawPath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.hero-logo-pulse {
+    animation: subtlePulse 4s ease-in-out infinite;
+}
+
+@keyframes subtlePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
