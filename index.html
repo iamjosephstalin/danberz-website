@@ -30,6 +30,8 @@
 <script defer src="libs/cdn.jsdelivr.net/npm/alpinejs%403.15.0/dist/cdn.min.js"></script>
 <script defer src="libs/cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script defer src="libs/cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script defer src="assets/js/gsap-init.js"></script>
+
 <link rel="preload" as="image" href="assets/images/illustrations/cloud-1.webp">
 <link rel="preload" as="image" href="assets/images/illustrations/cloud-2.webp">
 <link href="assets/css/styles.css" rel="stylesheet">
@@ -405,7 +407,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -475,7 +477,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -543,7 +545,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -614,7 +616,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -683,7 +685,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -807,7 +809,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -876,7 +878,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -943,7 +945,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -1011,7 +1013,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -1129,7 +1131,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -1197,7 +1199,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -1265,7 +1267,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -1333,7 +1335,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -1402,7 +1404,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -1514,27 +1516,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															QA/QC Standards
 														</span>
 													</div>
@@ -1543,9 +1543,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -1583,27 +1583,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															Material Traceability
 														</span>
 													</div>
@@ -1612,9 +1610,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -1652,27 +1650,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															Process Instrumentation
 														</span>
 													</div>
@@ -1681,9 +1677,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -1721,27 +1717,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															Third-Party Inspection
 														</span>
 													</div>
@@ -1750,9 +1744,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -1789,27 +1783,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															Certification Support
 														</span>
 													</div>
@@ -1818,9 +1810,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -1878,8 +1870,8 @@
 						</div>
 						<div
 							class="relative z-10 w-full pointer-events-none md:col-span-3 md:row-start-1 md:col-start-3">
-							<div class="w-full aspect-square relative transition-all duration-[1.5s] ease-out max-md:-mt-[10%] max-md:-mb-[20%] md:-mt-[20%] md:-mb-[30%] xl:-mt-[15%] 2xl:-mt-[15%]"
-								:class="animate ? '' : 'translate-x-1/4 opacity-0'">
+							<div class="w-full aspect-square relative duration-[1.5s] max-md:-mt-[10%] max-md:-mb-[20%] md:-mt-[20%] md:-mb-[30%] xl:-mt-[15%] 2xl:-mt-[15%]"
+								:class="animate ? '' : 'translate-x-1/4 '">
 								<img id="product-seq-5supplychain"
 									src="assets/ville/product-sequences/supplychain/supplychain00.webp"
 									alt="Industrial shipping container" class="object-contain w-full h-full"
@@ -1910,27 +1902,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															Ready-to-Ship Inventory
 														</span>
 													</div>
@@ -1939,9 +1929,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -1978,27 +1968,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															Global Sourcing Network
 														</span>
 													</div>
@@ -2007,9 +1995,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -2047,27 +2035,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															Logistics & Delivery
 														</span>
 													</div>
@@ -2076,9 +2062,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -2115,27 +2101,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															Project Support Services
 														</span>
 													</div>
@@ -2144,9 +2128,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -2184,27 +2168,25 @@
 									<div
 										class="flex relative z-20 justify-between items-center w-full no-underline bg-tr">
 										<div
-											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 transition-all ease-in-out items-center">
+											class="w-full text-[32px] laptop:text-5xl desktop:text-[64px] flex gap-x-4 group-[&.active]:gap-x-6 tablet:gap-x-10 tablet:group-hover:gap-x-14 tablet:group-[&.active]:gap-x-14 items-center">
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
-												<div zoom-in data-animation-delay="0"
-													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+												<div data-animation-delay="0" class="w-full h-full ">
+													<div class=" ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 											<h3 class="w-full text-2xl tablet:text-2xl">
-												<div slide-left data-animation-delay="0" class="w-full">
-													<div class="overflow-hidden opacity-0 transition-all duration-500">
-														<span
-															class="flex py-2 pt-2 pb-4 transition-transform duration-500 ease-out -translate-x-full">
+												<div data-animation-delay="0" class="w-full">
+													<div class="overflow-hidden ">
+														<span class="flex py-2 pt-2 pb-4 ">
 															Inventory Management
 														</span>
 													</div>
@@ -2213,9 +2195,9 @@
 										</div>
 										<div class="relative w-8 tablet:w-12 aspect-square">
 											<div
-												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]:rotate-90 transition-all duration-150 ease-in-out">
+												class="absolute w-[2px] h-full bg-dark top-0 right-1/2 group-[.active]: duration-150 ">
 											</div>
-											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 rotate-90">
+											<div class="absolute w-[2px] h-full bg-dark top-0 right-1/2 ">
 											</div>
 										</div>
 									</div>
@@ -2272,7 +2254,7 @@
 						</div>
 						<div
 							class="relative z-10 w-full pointer-events-none md:col-span-3 md:row-start-1 md:col-start-3">
-							<div class="w-full aspect-square relative transition-all duration-[1.5s] ease-out max-md:-mt-[10%] max-md:-mb-[20%] md:-mt-[50%] xl:-mt-[5%] 2xl:-mt-[5%]"
+							<div class="w-full aspect-square relative duration-[1.5s] max-md:-mt-[10%] max-md:-mb-[20%] md:-mt-[50%] xl:-mt-[5%] 2xl:-mt-[5%]"
 								:class="animate ? '' : 'translate-x-1/4 opacity-0'">
 								<img id="product-seq-6techsupport"
 									src="assets/ville/product-sequences/techsupport/techsupport00.webp"
@@ -2307,13 +2289,13 @@
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
 												<div zoom-in data-animation-delay="0"
 													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+													<div class="transition-all duration-500 ease-in-out ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">1</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
@@ -2376,13 +2358,13 @@
 											<div class="w-8 tablet:w-12 laptop:w-[60px]">
 												<div zoom-in data-animation-delay="0"
 													class="w-full h-full duration-500">
-													<div class="transition-all duration-500 ease-in-out scale-0">
+													<div class="transition-all duration-500 ease-in-out ">
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">2</span>
 															<div
-																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
+																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)]  group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
 														</div>
 													</div>
@@ -2450,7 +2432,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">3</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -2518,7 +2500,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">4</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -2586,7 +2568,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">5</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -2655,7 +2637,7 @@
 														<div
 															class="relative border-[2px] border-dark border-dotted tablet:border-dashed rounded-full aspect-square w-8 tablet:w-12 laptop:w-[60px] flex items-center justify-center text-[30px]">
 															<span
-																class="relative z-20 text-base tablet:text-3xl shrink-0text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">6</span>
+																class="relative z-20 text-base tablet:text-3xl shrink-0 text-[#2b2b2b] group-hover:text-[#2b2b2b] group-[&.active]:text-[#2b2b2b]">6</span>
 															<div
 																class="absolute z-10 top-[2px] left-[2px] w-[calc(100%-4px)] tablet:top-1 tablet:left-1 tablet:w-[calc(100%-8px)] scale-0 group-hover:scale-100 accordion-indicator-bg group-[&.active]:scale-100 transition-all ease-in-out aspect-square rounded-full duration-300">
 															</div>
@@ -3239,49 +3221,93 @@
 					});
 				}
 
-				const lenis = new Lenis({
-					duration: 1.0,
-					easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-					smoothWheel: true,
-					wheelMultiplier: 0.6,
-					smoothTouch: false,
-					touchMultiplier: 1.2,
-					infinite: false,
-					gestureDirection: 'vertical',
-					syncTouch: false
-				});
+				// Delayed init to avoid conflict with main.js lazy loading logic
+				setTimeout(() => {
+					try {
+						// Make lenis global so RAF can see it
+						window.lenis = new Lenis({
+							duration: 1.0,
+							easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+							smoothWheel: true,
+							wheelMultiplier: 0.6,
+							smoothTouch: false,
+							touchMultiplier: 1.2,
+							infinite: false,
+							gestureDirection: 'vertical',
+							syncTouch: false
+						});
 
-				// Optimize Lenis with RAF - only start after initial load
-				let rafId;
-				let rafStarted = false;
-				function raf(time) {
-					if (!rafStarted) return;
-					lenis.raf(time);
-					rafId = requestAnimationFrame(raf);
-				}
-
-				// Start RAF after initial render
-				requestAnimationFrame(() => {
-					rafStarted = true;
-					rafId = requestAnimationFrame(raf);
-				});
-
-				// Cleanup on page unload
-				window.addEventListener('beforeunload', () => {
-					if (rafId) cancelAnimationFrame(rafId);
-				});
+						function raf(time) {
+							if (window.lenis) {
+								window.lenis.raf(time);
+							}
+							requestAnimationFrame(raf);
+						}
+						requestAnimationFrame(raf);
+						console.log("Lenis initialized successfully.");
+					} catch (e) {
+						console.warn("Lenis init failed even with delay:", e);
+					}
+				}, 500); // 500ms delay to let main.js settle
 
 				function splitTextIntoLines() {
-					if (typeof Splitting === 'function') {
-						Splitting({
-							target: '.lineSplit',
-							by: 'lines'
+					const elements = document.querySelectorAll('.lineSplit');
+					if (!elements.length || typeof Splitting === 'undefined') return;
+
+					let index = 0;
+					const batchSize = 2;
+
+					function processBatch() {
+						const batch = Array.from(elements).slice(index, index + batchSize);
+						batch.forEach((item) => {
+							const originalHTML = item.dataset.text;
+							if (!originalHTML) return;
+
+							item.innerHTML = originalHTML;
+							const result = Splitting({ target: item, by: 'lines' });
+							const delay = item.dataset.animationDelay ? parseFloat(item.dataset.animationDelay) : 0;
+
+							// Check if lines exist, simpler fallback if not
+							if (!result[0] || !result[0].lines) return;
+
+							const lines = result[0].lines;
+							item.innerHTML = '';
+
+							lines.forEach((line, lineIndex) => {
+								const contentReveal = document.createElement('div');
+								contentReveal.setAttribute('content-reveal', '');
+								contentReveal.setAttribute('data-animation-delay', delay + lineIndex * 0.1);
+								contentReveal.className = 'w-full';
+
+								const wrapper = document.createElement('div');
+								wrapper.className = 'transform opacity-0 transition-all duration-500 overflow-hidden';
+
+								const span = document.createElement('span');
+								span.className = 'block translate-y-full transition-transform duration-500 ease-out';
+
+								const p = document.createElement('p');
+								const text = line.map((wordSpan) => wordSpan.textContent).join(' ');
+								p.textContent = text;
+
+								span.appendChild(p);
+								wrapper.appendChild(span);
+								contentReveal.appendChild(wrapper);
+								item.appendChild(contentReveal);
+
+								// CRITICAL FIX: Observe the new element immediately
+								if (typeof observerContentReveal !== 'undefined') {
+									observerContentReveal.observe(contentReveal);
+								}
+							});
 						});
-						Splitting({
-							target: '.wordSplit',
-							by: 'words'
-						});
+
+						index += batchSize;
+						if (index < elements.length) {
+							requestAnimationFrame(processBatch);
+						}
 					}
+
+					processBatch();
 				}
 
 				// Defer heavy text splitting until after initial render
