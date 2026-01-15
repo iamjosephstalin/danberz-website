@@ -19,6 +19,10 @@
 <meta http-equiv="Content-Security-Policy"
 	content="default-src 'self' https:; connect-src 'self' https://formspree.io; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://use.typekit.net https://p.typekit.net; img-src 'self' data: https:; font-src 'self' data: https://use.typekit.net;">
 <link rel="canonical" href="https://danberzqualitytech.ae/">
+<link rel="preconnect" href="https://hero.mm93joe.workers.dev">
+<link rel="dns-prefetch" href="https://hero.mm93joe.workers.dev">
+<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+<link rel="preconnect" href="https://p.typekit.net" crossorigin>
 <link rel="stylesheet" href="assets/css/lenis.css">
 <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 <link rel="stylesheet" href="libs/use.typekit.net/nnn3zav.css">
@@ -307,7 +311,7 @@
 										<path class="hero-arrow-path" d="M5 5 L20 -10 L35 5" />
 									</svg>
 								</div>
-								<span class="hero-subtext text-xl md:text-3xl lg:text-4xl">Quality Tech</span>
+								<span class="hero-subtext">Quality Tech</span>
 							</div>
 						</h1>
 					</div>
@@ -1482,7 +1486,8 @@
 							<div class="w-full aspect-square relative transition-all duration-[1.5s] ease-out max-md:-mt-[10%] max-md:-mb-[20%] md:-mt-[50%] md:mb-[10%] xl:-mt-[5%] 2xl:-mt-[5%]"
 								:class="animate ? '' : 'translate-x-1/4 opacity-0'">
 								<img id="product-seq-4qaqc" src="assets/ville/product-sequences/qaqc/qaqc00.webp"
-									alt="Industrial inspection scanner" class="object-contain w-full h-full">
+									alt="Industrial inspection scanner" class="object-contain w-full h-full"
+									loading="lazy">
 							</div>
 						</div>
 					</div>
@@ -1877,7 +1882,8 @@
 								:class="animate ? '' : 'translate-x-1/4 opacity-0'">
 								<img id="product-seq-5supplychain"
 									src="assets/ville/product-sequences/supplychain/supplychain00.webp"
-									alt="Industrial shipping container" class="object-contain w-full h-full">
+									alt="Industrial shipping container" class="object-contain w-full h-full"
+									loading="lazy">
 							</div>
 						</div>
 					</div>
@@ -2270,7 +2276,7 @@
 								:class="animate ? '' : 'translate-x-1/4 opacity-0'">
 								<img id="product-seq-6techsupport"
 									src="assets/ville/product-sequences/techsupport/techsupport00.webp"
-									alt="Rugged industrial laptop" class="object-contain w-full h-full">
+									alt="Rugged industrial laptop" class="object-contain w-full h-full" loading="lazy">
 							</div>
 						</div>
 					</div>
@@ -2988,7 +2994,7 @@
 	</script>
 	<div>
 		<div class="cm__blocked cm__active" style="z-index:99999999"></div>
-		<script src="assets/js/main.js"></script>
+		<script defer src="assets/js/main.js"></script>
 		<script>
 			const menuAccordion = document.getElementsByClassName('menu-accordion');
 			const header = document.querySelector('[main-header]');
