@@ -81,9 +81,9 @@
 	}
 
 	/* Critical: Reduce initial paint complexity */
-	#hero {
+	/* #hero {
 		contain: layout style paint;
-	}
+	} */
 
 	/* Optimize hero transitions */
 	.main-header {
@@ -164,6 +164,23 @@
 	.group.active .accordion-indicator-bg {
 		background-color: var(--color-accent) !important;
 	}
+
+	/* Force hide persistent hero animation elements from main.js */
+	.hero-sequence-img,
+	#hero-sequence-img,
+	[hero-sequence-img] {
+		display: none !important;
+		opacity: 0 !important;
+		visibility: hidden !important;
+		pointer-events: none !important;
+		width: 0 !important;
+		height: 0 !important;
+	}
+
+	/* Fix for hero visibility */
+	body.homepage {
+		background-color: transparent !important;
+	}
 </style>
 </head>
 
@@ -195,146 +212,49 @@
 			</div>
 		</div>
 	</header>
-	<div class="w-full overflow-hidden -mt-[100vh] tablet:-mt-[80vh] laptop:-mt-[100vh] desktop:-mt-[90vh]">
-		<div id="hero"
-			class="relative !w-full min-h-[200vh] desktop:min-h-[190vh] lg:h-auto lg:aspect-[0.75] xl:aspect-square desktop:aspect-[1.25] bg-[#3484b4] z-0"
-			x-data="{
-																																																				            active: 0,
-																																																				            numberCounter: 0,
-																																																				            interval: null,
-																																																				            loading: true,
-																																																				            loaderText: [
-																																																				            'Proven Expertise',
-																																																				            'Extensive Inventory',
-																																																				            'Global Sourcing',
-																																																				            'Safety First',
-																																																				            'Quality Assurance',
-																																																				            'Reliable Supply',
-																																																				            'Trusted Partner',
-																																																				            'Rapid Turnaround',
-																																																				            'Premium Quality',
-																																																				            'Industrial Solutions',
-																																																				            ],
-																																																				            finishLoading() {
-																																																				            const body = document.body;
-																																																				            clearInterval(this.interval);
-																																																				            this.loading = false;
-																																																				            body.classList.remove('overflow-hidden');
-																																																				            body.removeAttribute('data-lenis-prevent');
-																																																				            },
-																																																				            ticker() {
-																																																				            const body = document.body;
-																																																				            body.setAttribute('data-lenis-prevent', '');
-																																																				            window.addEventListener('villeBannerReady', () => {
-																																																				            setTimeout(() => this.finishLoading(this.interval), 500)
-																																																				            }, { once: true });
-																																																				            const waitForScrollTop = () => {
-																																																				            const scrollTimeout = setTimeout(() => window.scrollTo(0, 0), 100)
-																																																				            if (window.scrollY <= 1) {
-																																																				            body.classList.add('overflow-hidden');
-																																																				            clearTimeout(scrollTimeout);
-																																																				            // Reduced loader - 6 seconds with faster transitions
-																																																				            this.interval = setInterval(() => {
-																																																				            if (this.active < this.loaderText.length - 1) {
-																																																				            this.active++;
-																																																				            } else {
-																																																				            this.finishLoading();
-																																																				            }
-																																																				            }, 100); // Reduced to 100ms for faster loading (~1s total)
-																																																				            // Number counter for circular progress (1-100 in ~6 seconds)
-																																																				            const numberInterval = setInterval(() => {
-																																																				            if (this.numberCounter < 100) {
-																																																				            this.numberCounter += 2; // Increment by 2 for faster progress
-																																																				            } else {
-																																																				            clearInterval(numberInterval);
-																																																				            }
-																																																				            }, 20); // Update every 20ms for smoother performance
-																																																				            } else {
-																																																				            setTimeout(waitForScrollTop, 10);
-																																																				            }
-																																																				            };
-																																																				            setTimeout(waitForScrollTop, 0);
-																																																				            }
-																																																				            }" x-init="ticker()">
-			<img id="hero-fallback"
-				class="object-cover object-bottom absolute inset-0 z-0 w-full h-full opacity-0 hero-bg-dim"
-				src="assets/images/illustrations/cloud-1.webp" alt="Hero background" style="display: block;"
-				onload="this.style.opacity='1'; this.style.transition='opacity 0.3s ease-in'">
-			<div class="absolute inset-x-0 top-0 z-0 py-44">
+	<section id="hero-video"
+		style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 1; background-color: #000; overflow: hidden;">
+		<!-- Video Background -->
+		<video autoplay loop muted playsinline
+			style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; pointer-events: none;">
+			<source src="assets/dubai-night.webm" type="video/webm">
+		</video>
 
-				<div class="h-[65vh] md:h-[70vh] xl:h-screen relative z-10">
-					<div class="w-full sticky top-[15vh] inset-x-0 pt-6 xl:pt-12">
-						<style>
-							@media screen and (min-width: 1536px) and (max-width: 1760px) {
-								h1.main-header {
-									font-size: 150px;
-								}
-							}
+		<!-- Overlay Content -->
+		<div
+			style="position: relative; width: 100%; height: 100%; z-index: 10; display: flex; flex-direction: column; justify-content: center; align-items: center; pointer-events: none;">
+			<div class="w-full pt-6 xl:pt-12 pointer-events-auto">
+				<style>
+					@media screen and (min-width: 1536px) and (max-width: 1760px) {
+						h1.main-header {
+							font-size: 150px;
+						}
+					}
 
-							@media screen and (min-width: 1280px) and (max-width: 1470px) {
-								h1.main-header {
-									font-size: 115px;
-								}
-							}
-
-							.digital-display {
-								font-family: 'Courier New', Courier, monospace;
-								color: #00ff00;
-								background: rgba(0, 0, 0, 0.8);
-								padding: 2px 5px;
-								border-radius: 4px;
-								border: 1px solid #00ff00;
-								font-weight: bold;
-								font-size: 14px;
-								box-shadow: 0 0 5px #00ff00;
-							}
-						</style>
-						<h1 class="main-header flex flex-col items-center justify-center text-center text-[48px] md:text-[76px] lg:text-[115px] xl:text-[150px] 2xl:text-[200px] leading-none break-all w-full relative z-0 wrap opacity-0 transition-all duration-1000 delay-300"
-							:class="loading ? 'translate-y-1/2' : '!opacity-100'">
-							<div class="hero-logo-container hero-logo-pulse">
-								<div class="hero-logo-lockup">
-									<span class="hero-logo-text">Danberz</span>
-									<!-- 
-										SVG Geometry for 90-degree angle:
-										If width is 40, height is 40.
-										Point 1: 5, 25 (Left)
-										Point 2: 20, 10 (Peak - must be 90 deg)
-										Point 3: 35, 25 (Right)
-										To get exactly 90 degrees, the rise/run must imply it. 
-										If peak is (20,10), leg points at (5,25) and (35,25) form a triangle with height 15 and half-base 15. 
-										Slope = 1. Atan(1) = 45 deg. 45+45 = 90 deg at top. Perfect.
-									-->
-									<svg class="hero-arrows-svg" viewBox="0 0 40 40" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<!-- Bottom Chevron -->
-										<path class="hero-arrow-path" d="M5 25 L20 10 L35 25" />
-										<!-- Top Chevron (shifted up by 15 units? No, closer.) -->
-										<!-- Let's say shifted by 10 units up -> (5,15) (20,0) (35,15) -->
-										<path class="hero-arrow-path" d="M5 5 L20 -10 L35 5" />
-									</svg>
-								</div>
-								<span class="hero-subtext">Quality Tech</span>
-							</div>
-						</h1>
+					@media screen and (min-width: 1280px) and (max-width: 1470px) {
+						h1.main-header {
+							font-size: 115px;
+						}
+					}
+				</style>
+				<h1
+					class="main-header flex flex-col items-center justify-center text-center text-[48px] md:text-[76px] lg:text-[115px] xl:text-[150px] 2xl:text-[200px] leading-none break-all w-full relative z-0 wrap !opacity-100 transition-all duration-1000 delay-300">
+					<div class="hero-logo-container hero-logo-pulse">
+						<div class="hero-logo-lockup">
+							<span class="hero-logo-text">Danberz</span>
+							<svg class="hero-arrows-svg" viewBox="0 0 40 40" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="hero-arrow-path" d="M5 25 L20 10 L35 25" />
+								<path class="hero-arrow-path" d="M5 5 L20 -10 L35 5" />
+							</svg>
+						</div>
+						<span class="hero-subtext">Quality Tech</span>
 					</div>
-				</div>
-				<div
-					class="absolute left-2/3 xl:left-auto xl:right-0 z-0 min-w-[400px] w-1/2 pointer-events-none top-[10%] cloud-animate">
-					<img class="object-contain aspect-[744/280] w-full" src="assets/images/illustrations/cloud-1.webp"
-						alt="" loading="eager" fetchpriority="high" width="744" height="280">
-				</div>
-				<div class="absolute top-[30%] md:top-[25%] xl:top-[25%] desktop:top-[15%] -left-1/2 min-w-[1800px] max-w-[3000px] w-[200%] pointer-events-none z-10 will-change-auto"
-					cloud-animate>
-					<div class="w-full will-change-transform cloud-animate-2">
-						<img class="object-contain aspect-[744/280] w-full"
-							src="assets/images/illustrations/cloud-2.webp" alt="" loading="eager" fetchpriority="high"
-							width="744" height="280">
-					</div>
-				</div>
+				</h1>
 			</div>
 		</div>
-	</div>
-	<section id="ville-body" class="-mt-[120vh] translate-y-[120vh]">
+	</section>
+	<section id="ville-body">
 		<section class="relative z-10 w-full h-full bg-yellow">
 			<div class="pt-10 pb-20 xl:pt-14 xl:pb-48 wrap">
 				<span class="block py-2 mb-10 transition-transform duration-500 ease-out translate-y-0 tablet:mb-20">
@@ -369,7 +289,7 @@
 						</div>
 						<div
 							class="relative z-10 w-full pointer-events-none md:col-span-3 md:row-start-1 md:col-start-3">
-							<div class="w-full aspect-square relative transition-all duration-[1.5s] ease-out max-md:-mt-[10%] max-md:-mb-[20%] md:-mt-[30%] 2xl:-mt-[10%]"
+							<div class="w-[70%] mx-auto aspect-square relative transition-all duration-[1.5s] ease-out max-md:mt-0 max-md:mb-0 md:-mt-[15%] 2xl:-mt-[5%]"
 								:class="animate ? '' : 'translate-x-1/4 opacity-0'">
 								<img id="product-seq-1piping" src="assets/ville/product-sequences/piping/piping00.webp"
 									alt="Industrial piping" class="object-contain w-full h-full">
@@ -765,7 +685,7 @@
 						</div>
 						<div
 							class="relative z-10 w-full pointer-events-none md:col-span-3 md:row-start-1 md:col-start-3">
-							<div class="w-full aspect-square relative transition-all duration-[1.5s] ease-out md:-mt-[40%] max-md:-mt-[10%] max-md:-mb-[20%] xl:-mt-[5%] 2xl:-mt-[5%]"
+							<div class="w-[70%] mx-auto aspect-square relative transition-all duration-[1.5s] ease-out md:-mt-[20%] max-md:mt-0 max-md:mb-0 xl:-mt-[5%] 2xl:-mt-[5%]"
 								:class="animate ? '' : 'translate-x-1/4 opacity-0'">
 								<img id="product-seq-2valves" src="assets/ville/product-sequences/valves/valves00.webp"
 									alt="Industrial gate valve" class="object-contain w-full h-full">
@@ -1093,7 +1013,7 @@
 						</div>
 						<div
 							class="relative z-10 w-full pointer-events-none md:col-span-3 md:row-start-1 md:col-start-3">
-							<div class="w-full aspect-[4/3] relative transition-all duration-[1.5s] ease-out md:-mt-[30%] md:mb-[10%] max-md:-mt-[10%] max-md:-mb-[20%] xl:-mt-[5%] 2xl:-mt-[5%]"
+							<div class="w-[70%] mx-auto aspect-[4/3] relative transition-all duration-[1.5s] ease-out md:-mt-[15%] md:mb-[5%] max-md:mt-0 max-md:mb-0 xl:-mt-[5%] 2xl:-mt-[5%]"
 								:class="animate ? '' : 'translate-x-1/4 opacity-0'">
 								<img id="product-seq-3instrumentation"
 									src="assets/ville/product-sequences/instrumentation/instrumentation00.webp"
@@ -1485,7 +1405,7 @@
 						</div>
 						<div
 							class="relative z-10 w-full pointer-events-none md:col-span-3 md:row-start-1 md:col-start-3">
-							<div class="w-full aspect-square relative transition-all duration-[1.5s] ease-out max-md:-mt-[10%] max-md:-mb-[20%] md:-mt-[50%] md:mb-[10%] xl:-mt-[5%] 2xl:-mt-[5%]"
+							<div class="w-[70%] mx-auto aspect-square relative transition-all duration-[1.5s] ease-out max-md:mt-0 max-md:mb-0 md:-mt-[25%] md:mb-[5%] xl:-mt-[5%] 2xl:-mt-[5%]"
 								:class="animate ? '' : 'translate-x-1/4 opacity-0'">
 								<img id="product-seq-4qaqc" src="assets/ville/product-sequences/qaqc/qaqc00.webp"
 									alt="Industrial inspection scanner" class="object-contain w-full h-full"
@@ -2698,7 +2618,7 @@
 					</section>
 				</div>
 			</div>
-			<div
+			<!-- <div
 				class="absolute h-full max-w-max inset-y-0 right-0 pr-5 max-xl:hidden max-xl:invisible pt-[50vh] pb-[40vh]">
 				<div
 					class="flex flex-col gap-px px-2 py-3.5 rounded-[0.625rem] bg-yellow sticky top-[50vh] right-0 -translate-y-1/2">
@@ -2727,7 +2647,7 @@
 						06
 					</a>
 				</div>
-			</div>
+			</div> -->
 		</section>
 	</section>
 	<section id="kontakt-form" class="relative z-20 pb-12 w-full bg-yellow tablet:pb-20">
@@ -3471,6 +3391,8 @@
 
 			});
 		</script>
+		<!-- Dummy hero to prevent main.js errors -->
+		<div id="hero" style="display: none !important;"></div>
 </body>
 </body>
 
